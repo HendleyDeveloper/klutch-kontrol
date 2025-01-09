@@ -1,3 +1,19 @@
+.navbar-custom {
+    background: linear-gradient(110deg, white 30%, #03045E 70%);
+}
+
+.menu-link {
+    color: #90E0EF;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    color: #90E0EF;
+}
+
 #main-logo {
     width: 240px;
     height: 73.5px;
