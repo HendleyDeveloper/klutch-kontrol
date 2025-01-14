@@ -1,3 +1,22 @@
+/* Fixes footer to the bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
 .navbar-custom {
     background: linear-gradient(110deg, white 30%, #03045E 70%);
 }
@@ -11,7 +30,7 @@
 }
 
 .menu-link:hover {
-    color: #90E0EF;
+    color: white;
 }
 
 #main-logo {
