@@ -18,7 +18,7 @@
   <!-- Bootstrap navigation -->
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#"><img src="./img/klutch-kontrol-logo.png" alt="Klutch Kontrol Logo" id="main-logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,16 @@
             <div class="container">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto justify-content-end">
                 <li class="nav-item">
-                  <a aria-current="page" href="#"><button class="button-active">Home</button></a>
+                  <a aria-current="page" href="#"><button class="kk-button-active">Home</button></a>
               </li>
               <li class="nav-item">
-                <a href="#"><button class="menu-button">About</button></a>
+                <a href="#"><button class="kk-button">About</button></a>
               </li>
               <li class="nav-item">
-                <a href="#"><button class="menu-button">Pricing</button></a>
+                <a href="#"><button class="kk-button">Pricing</button></a>
               </li>
               <li class="nav-item">
-                <a href="#"><button class="menu-button">Contact</button></a>
+                <a href="#"><button class="kk-button">Contact</button></a>
               </li>
             </ul>
           </div>
@@ -55,7 +55,7 @@
           <section>
             <h1 id="welcome">Welcome to Klutch Kontrol school of motoring</h1>
             <p>Learn to drive with confidence and ease with Klutch Kontrol, guided by a fully qualified ADI driving instructor dedicated to helping you master the road safely and efficiently.</p>
-            <button>Enquire Now</button>
+            <button class="kk-button">Enquire Now</button>
           </section>
         </div>
       </div>
@@ -64,20 +64,22 @@
       <div class="row appointment-row">
         <div class="col-md-4">
           <section>
-            <h2>Make an appointment</h2>
-            <p>We offer 2-hour driving lessons. All lessons are structured to the individuals needs and are on a 1-to-1 basis.</p>
-            <button>Book an Appointment</button>
+            <h2>Lessons</h2>
+            <hr>
+            <p>I offer 2-hour driving lessons. All lessons are structured to the individuals needs and are on a 1-to-1 basis.</p>
+            <button class="kk-button">Book a Lesson</button>
           </section>
         </div>
         <div class="col-md-4">
           <section>
             <h2>Opening Times</h2>
-            <h3>April to September:</h3>
+            <hr>
+            <h4>April to September:</h4>
             <ul>
               <li>Monday to Friday: 08:00 - 18:00</li>
               <li>Saturday & Sunday: 09:00 - 16:00</li>
             </ul>
-            <h3>October to March:</h3>
+            <h4>October to March:</h4>
             <ul>
               <li>Monday to Friday: 09:00 - 16:00</li>
               <li>Saturday & Sunday: 09:00 - 15:00</li>
@@ -87,7 +89,11 @@
         <div class="col-md-4">
           <section>
             <h2>Limited Availability</h2>
-            <p>07588 630266</p>
+            <hr>
+            <div class="phone-container">
+              <i class="fa-solid fa-phone"></i>
+              <p class="phone-number">07588 630266</p>
+            </div>
           </section>
         </div>
       </div>
@@ -96,25 +102,31 @@
       <div class="row offer-row">
         <div class="col-sm-10">
           <section>
-            <h1>What We Offer</h1>
-            <p>We offer the platform for you to learn a new skill for life in a safe and pleasant environment. Learning takes place at your own pace. Lessons are centered around you, the customer.</p>
+            <h1>What I Offer</h1>
+            <p>I offer the platform for you to learn a new skill for life in a safe and pleasant environment. Learning takes place at your own pace. Lessons are centered around you, the customer.</p>
           </section>
         </div>
-        <div class="col-sm-2 text-center">
-          <button>Book Now</button>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center text-center">
+          <button class="kk-button">Book Now</button>
         </div>
       </div>
       <div class="row manual-pp">
         <div class="col-sm-6">
           <section>
-            <h2>Manual Driving Lessons</h2>
+            <div class="icon-container">
+              <i class="fa-solid fa-car-rear"></i>
+              <h2>Manual Driving Lessons</h2>
+            </div>
             <p>All lessons are delivered in a modern manual car on a 1-to-1 basis. Lessons are delivered to your own needs and skill set.  Passing your driving test in a manual car gives you the option of driving both manual and automatic cars when you have passed.</p>
           </section>
         </div>
         <div class="col-sm-6">
           <section>
-            <h2>Pass Plus</h2>
-            <p>Pass Plus training takes at least 6 hours. It has 6 modules, covering driving:</p>
+            <div class="icon-container">
+              <i class="fa-solid fa-user-plus"></i>
+              <h2>Pass Plus</h2>
+            </div>
+            <p>I offer Pass Plus training which takes at least 6 hours. It has 6 modules, covering the following driving situations:</p>
               <ul>
                 <li>in town</li>
                 <li>in all weathers</li>
@@ -130,19 +142,28 @@
       <div class="row training-row">
         <div class="col-sm-4">
           <section>
-            <h2>Motorway Lessons</h2>
+            <div class="icon-container">
+              <i class="fa-solid fa-road"></i>
+              <h2>Motorway Lessons</h2>
+              </div>
             <p>Motorway lessons can give you the knowledge and confidence to be a competent and safe motorway driver.</p>
           </section>
         </div>
         <div class="col-sm-4">
           <section>
-            <h2>One-on-One Tuition</h2>
+            <div class="icon-container">
+              <i class="fa-solid fa-user-group"></i>
+              <h2>One-on-One Tuition</h2>
+            </div>
             <p>All lessons are carried out on a one-to-one basis. With lessons delivered to your needs and driving experience.</p>
           </section>
         </div>
         <div class="col-sm-4">
           <section>
-            <h2>Theory Training</h2>
+            <div class="icon-container">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <h2>Theory Training</h2>
+            </div>
             <p>Access to this is gained through the Total Drive app. Access to this training aid is FREE</p>
           </section>
         </div>
@@ -150,7 +171,7 @@
     </div>
     <div class="container review-carousel">
       <div class="row">
-        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
           <!-- Indicators -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -159,12 +180,13 @@
             <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
             <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
           </div>
         
           <!-- Slides -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>Kristian is fab instructor. Both my sons have passed first time and quickly with Kristian. Would highly recommend.  Will definitely use again for my daughter when she's old enough in 3 years.</p>
@@ -173,7 +195,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>A patient and encouraging instructor who made lessons fun and easy.</p>
@@ -182,7 +204,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>Thank you Kristain for helping pass my test in one attempt. Your incredible guidance and support throughout my lessons. His patience, encouragement and clear instructions made all the difference in helping me build confidence. He always took time to explain things thoroughly. I appreciate you being calm and reassuring, even when I felt nervous or made mistakes.</p>
@@ -193,7 +215,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>Passed first time, couldn’t recommend Kristian any more. Excellent instructor, enjoyed every minute</p>
@@ -202,7 +224,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>Thank you to Kristian who helped me work on my weaknesses to pass my test. He is very patient, very punctual and communicative. Overall very lovely to work with him.</p>
@@ -211,11 +233,20 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="d-flex align-items-center justify-content-center" style="height: 250px;">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
                 <div class="text-center">
                   <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                   <p>Hi Kristian, I just wanted to say a huge thank you for all your patience, guidance, and support in helping me pass my driving exam today! I couldn’t have done it without your expertise and encouragement. You made me feel confident and prepared every step of the way. Thank you so much for everything!</p>
                   <h4>Sachika Shehan</h4>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
+                <div class="text-center">
+                  <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                  <p>Well what can I say ☺️ Kristian is amazing! I was an extremely nervous beginner driver and really didn't think I'd ever be capable of passing my test or accomplishing my driving goals! I had lessons with other instructors but I genuinely felt like I was not getting anywhere BUT BOY DID THAT CHANGE when I met Kristian ☺️! Kristian has not only transformed my driving capabilities but has also helped with my overall confidence in every situation! I passed first time and never ever thought that was possible, but thanks to this fantastic guy I've achieved my goals and more! If your looking for a driving instructor then this is your guy!!!!Can't recommend him enough!Top notch above all the rest!</p>
+                  <h4>Sophie Cummins</h4>
                 </div>
               </div>
             </div>
@@ -235,7 +266,27 @@
     </div>
   </main>
   <footer>
-    <!-- Insert T3C and add media links -->
+    <!-- Outer wrapper to manage full-screen background -->
+    <div style="background-color: white;">
+      <!-- Inner container to constrain width -->
+      <div class="container kk-footer">
+        <div class="row align-items-center text-center">
+          <div class="col-sm-4">
+            <p class="mb-0">Copyright <i class="fa-regular fa-copyright copyright"></i> 2025 | Designed by PugPixel Studios</p>
+          </div>
+          <div class="col-sm-4">
+            <!-- Optional content can go here -->
+          </div>
+          <div class="col-sm-4">
+            <div class="social-icons d-flex justify-content-center gap-3">
+              <a href="https://x.com/klutchkontroll/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100088949520778" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.tiktok.com/@magoowood75" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

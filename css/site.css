@@ -29,15 +29,27 @@ i {
 }
 
 .carousel-item {
-    background-color: lightslategray;
+    background-color: lightgray;
     margin-bottom: 50px;
+}
+
+.kk-footer {
+    background-color: #03045e;
+}
+
+.kk-footer i {
+    color: white;
+}
+
+.kk-footer p {
+    color: white;
 }
 
 /* Color scheme end */
 
 /* Navigation */
 
-.menu-button {
+.kk-button {
     margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -50,13 +62,13 @@ i {
     font-weight: bold;
 }
 
-.menu-button:hover {
+.kk-button:hover {
     border: 2px, darkred, solid;
     background-color: darkred;
     color: white;
 }
 
-.button-active {
+.kk-button-active {
     margin-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -75,8 +87,7 @@ i {
 }
 
 footer {
-    background-color: #03045e;
-
+    background-color: rgb(96, 100, 104);
 }
 
 /* Navigation End */
@@ -119,9 +130,47 @@ footer {
     padding-bottom: 50px;
 }
 
-.review-carousel {
-    margin-left: 20px;
-    margin-right: 20px;
+.review-carousel p {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.phone-container {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds spacing between the icon and the text */
+  }
+.phone-container i {
+    color: white;
+    font-size: 1.6rem; /* Adjust the icon size if necessary */
+  }
+
+.phone-container p {
+    font-size: 36px;
+  }
+
+.icon-container {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds spacing between the icon and the text */
+  }
+  .icon-container i {
+    color: #03045e;
+    font-size: 1.6rem; /* Adjust the icon size if necessary */
+  }
+
+  .kk-footer {
+    height: 120px;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .social-icons i:hover {
+    color: #03045e;
+  }
 
 /* Sections end */
