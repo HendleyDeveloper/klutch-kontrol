@@ -1,26 +1,72 @@
+/* -----Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+}
+
+p, li {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* Color scheme */
 
 .box-fill {
     background-color: #03045e;
-    border-radius: 15px;
     color: white;
+}
+
+i {
+    font-size: 25px;
+    color: gold;
+    padding-bottom: 15px;
+}
+
+.carousel-item {
+    background-color: lightslategray;
+    margin-bottom: 50px;
 }
 
 /* Color scheme end */
 
 /* Navigation */
 
-.menu-link {
+.menu-button {
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+    border: 2px, #03045e, solid;
     color: #03045e;
-    padding-right: 20px;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
 }
 
-.menu-link:hover {
-    text-decoration-line: underline;
-    text-decoration-color: darkred;
+.menu-button:hover {
+    border: 2px, darkred, solid;
+    background-color: darkred;
+    color: white;
+}
+
+.button-active {
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 2px, darkred, solid;
+    background-color: #03045e;
+    color: white;
+    font-weight: bold;
 }
 
 #main-logo {
@@ -38,7 +84,7 @@ footer {
 /* intro content */
 
 .car-intro {
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 
@@ -46,11 +92,36 @@ footer {
 
 /* Sections */
 
+.box-fill {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .appointment-row {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.offer-row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.manual-pp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.training-row {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.review-carousel {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Sections end */
