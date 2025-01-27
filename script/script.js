@@ -13,10 +13,10 @@ function sendMail(event) {
     emailjs
         .send("service_7z5gd6h", "template_vk9ve6q", parms)
         .then(() => {
-            alert("Email Sent. You can now close this window.");
+            alert("Enquiry Sent.");
         })
         .catch((error) => {
             console.error("Failed to send email:", error);
-            alert("Failed to send email. Please try again.");
+            alert("Failed to send Enquiry. Please try again.");
         });
 }

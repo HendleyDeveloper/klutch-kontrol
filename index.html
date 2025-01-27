@@ -12,10 +12,23 @@
     <!-- Bootstrap initilaisation end -->
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/5457c89002.js" crossorigin="anonymous"></script>
-    <title>Klutch Kontrol - 5* rated driving instructor in Porth</title>
+    <!-- EmailJS initialisation -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "nLNQPjE2btCQuB3aX",
+    });
+    })();
+    </script>
+    <!-- Custom JS Script -->
+     <script src="./script/script.js"></script>
+    <title>Klutch Kontrol - A 5* rated driving instructor in South Wales</title>
 </head>
 <body>
-  <!-- Bootstrap navigation -->
+  <!-- Navigation bar -->
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -44,22 +57,25 @@
       </div>
     </nav>
   </header>
-  <!-- End bootstrap navigation -->
+  <!-- End navigation bar -->
   <main>
+    <!-- Intro container -->
     <div class="container text-center car-intro">
       <div class="row">
         <div class="col">
-          <img src="./img/klutch-kontrol-main-img.png" alt="Car" class="img-fluid">
+          
         </div>
         <div class="text-center">
           <section>
             <h1 id="welcome">Welcome to Klutch Kontrol school of motoring</h1>
             <p>Learn to drive with confidence and ease with Klutch Kontrol, guided by a fully qualified ADI driving instructor dedicated to helping you master the road safely and efficiently.</p>
-            <button class="kk-button" onclick="window.open('enquiry.html', '_blank')">Enquire Now</button>
+            <button class="kk-button">Enquire Now</button>
           </section>
         </div>
       </div>
     </div>
+    <!-- End intro container -->
+    <!-- General info container -->
     <div class="container box-fill">
       <div class="row appointment-row">
         <div class="col-md-4">
@@ -98,6 +114,8 @@
         </div>
       </div>
     </div>
+    <!-- End general info container -->
+    <!-- Services container -->
     <div class="container">
       <div class="row offer-row">
         <div class="col-sm-10">
@@ -169,6 +187,7 @@
         </div>
       </div>
     </div>
+    <!-- End services container -->
     <!-- Review carousel -->
     <div class="container">
       <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
@@ -180,7 +199,49 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.625941384997!2d-3.3965812!3d51.61174210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e170ee9084d31%3A0x6825a44cda76b454!2sKlutchKontrol%20Driving%20School!5e0!3m2!1sen!2suk!4v1737902053969!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- End map -->
+    <!-- Enquiry container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Make an Enquiry</h2>
+          <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <br>
+                <input type="text" class="form-control" id="name" placeholder="Klutch Kontrol" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <br>
+                <input type="email" class="form-control" id="email" placeholder="klutchkontrol.co.uk@gmail.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <br>
+                <input type="tel" class="form-control" id="phone"  placeholder="07987654321" required>
+            </div>
+            <div class="mb-3">
+                <label for="enquiry" class="form-label">Enquiry</label>
+                <br>
+                <textarea class="form-control" id="enquiry" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="sendMail(event)">Submit</button>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <img src="./img/klutch-kontrol-main-img.png" alt="Car" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- End enquiry container -->
+    <!-- About container -->
+    
+    <!-- End about container -->
+    <!-- Pricing Container -->
+    
+    <!-- End pricing container -->
   </main>
+  <!-- Footer navbar -->
   <footer>
     <!-- Outer wrapper to manage full-screen background -->
     <div style="background-color: white;">
@@ -204,5 +265,6 @@
       </div>
     </div>
   </footer>
+  <!-- End footer navbar -->
 </body>
 </html>
