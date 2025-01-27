@@ -45,6 +45,13 @@ i {
     color: white;
 }
 
+.header-background {
+    background-color: #03045e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
 /* Color scheme end */
 
 /* Navigation */
@@ -95,9 +102,49 @@ footer {
 /* intro content */
 
 .car-intro {
+    position: relative;
     padding-top: 10px;
     padding-bottom: 50px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #03045e, 2px, solid;
 }
+
+.car-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/intro-background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.car-intro p {
+    color: white;
+}
+
+.car-intro h1 {
+    color: white;
+}
+
+.outline-text {
+    color: white;
+    text-shadow: -1px -1px 0 #03045e, 
+                 1px -1px 0 #03045e, 
+                 -1px 1px 0 #03045e, 
+                 1px 1px 0 #03045e;
+  }
 
 /* intro content end */
 
@@ -116,12 +163,10 @@ footer {
 }
 
 .offer-row {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 50px;
 }
 
 .manual-pp {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
