@@ -191,11 +191,11 @@
     </div>
     <!-- End map -->
     <!-- Enquiry container -->
-    <div class="container">
+    <div class="container my-4">
       <div class="row">
-        <div class="col-sm-6">
-          <h2>Make an Enquiry</h2>
-          <form>
+        <h2 class="header-background">Make an Enquiry</h2>
+        <div class="col-sm-6 section-format-1">
+          <form class="py-4">
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <br>
@@ -214,26 +214,27 @@
             <div class="mb-3">
                 <label for="enquiry" class="form-label">Enquiry</label>
                 <br>
-                <textarea class="form-control" id="enquiry" required></textarea>
+                <textarea class="form-control" id="enquiry" style="resize: none;" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" onclick="sendMail(event)">Submit</button>
+            <button type="submit" class="kk-button" onclick="sendMail(event)">Submit</button>
           </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 section-format-2 d-flex align-items-center justify-content-center">
           <img src="./img/klutch-kontrol-main-img.png" alt="Car" class="img-fluid">
         </div>
       </div>
     </div>
     <!-- End enquiry container -->
     <!-- About container -->
-      <div class="container">
+      <div class="container d-flex justify-content-center align-items-center my-4">
         <div class="row">
-          <div class="col">
-            <h2>Meet the Instructor</h2>
-            <h3>Kristian Lloyd</h3>
-            <h4>Owner</h4>
-            <p>
-              Hi, I’m Kristian I have lived in the Pontypridd area for around 30yrs. I am married with one grown-up son.
+          <h2 class="header-background">Meet the Instructor</h2>
+          <h3 class="section-format-1 pt-2">Kristian Lloyd</h3>
+          <h4 class="section-format-1 pb-2">Owner</h4>
+          <div class="container section-format-2">
+            <p class="py-4">
+              Hi, I’m Kristian I have lived in the Pontypridd area for around 30 years. I am married with one grown-up son.
+              <br>
               <br>
               I thoroughly enjoy being an ADI driving instructor and meeting new customers regularly. I am very patient and understanding with my customers. Most of my customers will say I put them at ease as soon as they get into the driving seat. Everything is explained in detail and we can go as fast or as slow as you like with your learning. All learning is customer centred.
             </p>
@@ -242,40 +243,36 @@
       </div>
     <!-- End about container -->
     <!-- Pricing Container -->
-    <div class="container">
+    <div class="container my-4">
       <div class="row">
-        <h2>Pricing</h2>
-        <div class="col-sm-3">
+        <h2 class="header-background">Pricing</h2>
+        <div class="col-sm-3 text-center my-4">
           <h3>£68.00</h3>
           <h4>Single Lesson</h4>
-          <ul>
-            <li>Pay Per Lesson</li>
-            <li>2 hour session</li>
-          </ul>
+          <span>
+            Pay Per Lesson
+          </span>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center my-4">
           <h3>£325.00</h3>
           <h4>Block Booking - 5 Lessons</h4>
-          <ul>
-            <li>£65.00 per lesson</li>
-            <li>Save £15.00!</li>
-          </ul>
+          <span>
+            £65.00 per lesson, saving you £15.00!
+          </span>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center my-4">
           <h3>£650.00</h3>
           <h4>Block Booking - 10 Lessons</h4>
-          <ul>
-            <li>£65.00 per lesson</li>
-            <li>Save £30.00!</li>
-          </ul>
+          <span>
+            £65.00 per lesson, saving you £30.00!
+          </span>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 text-center my-4">
           <h3>£1300.00</h3>
           <h4>Block Booking - 20 Lessons</h4>
-          <ul>
-            <li>£65.00 per lesson</li>
-            <li>Save £60.00!</li>
-          </ul>
+          <span>
+            £65.00 per lesson, saving you £60.00!
+          </span>
         </div>
       </div>
     </div>

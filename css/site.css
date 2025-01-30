@@ -15,6 +15,14 @@ section {
     padding-bottom: 20px;
 }
 
+.form-control {
+    background-color: #CAF0F8 !important;
+}
+
+.form-control:focus {
+    background-color: white !important;
+}
+
 /* Color scheme */
 
 .box-fill {
@@ -55,10 +63,17 @@ i {
 
 .section-format-1 {
     background-color: #90E0EF;
+    margin-bottom: 0;
 }
 
 .section-format-2 {
     background-color: #CAF0F8;
+    margin-bottom: 0;
+}
+
+.price-border {
+    border-style: solid;
+    border-color: lightgray;
 }
 
 /* Color scheme end */
@@ -226,7 +241,7 @@ footer {
   }
 
   .social-icons i:hover {
-    color: #03045e;
+    color: #CAF0F8;
   }
 
 /* Sections end */
