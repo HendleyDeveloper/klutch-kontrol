@@ -15,12 +15,14 @@ section {
     padding-bottom: 20px;
 }
 
-.form-control {
-    background-color: #CAF0F8 !important;
+.pricing-value {
+    font-weight: bold;
+    font-size: 42px;
 }
 
-.form-control:focus {
-    background-color: white !important;
+#welcome {
+    font-size: 48px;
+    font-weight: bold;
 }
 
 /* Color scheme */
@@ -59,6 +61,7 @@ i {
     padding-bottom: 10px;
     margin-bottom: 0;
     color: white;
+    font-weight: bold;
 }
 
 .section-format-1 {
@@ -71,9 +74,64 @@ i {
     margin-bottom: 0;
 }
 
-.price-border {
-    border-style: solid;
-    border-color: lightgray;
+.form-control {
+    background-color: #CAF0F8 !important;
+}
+
+.form-control:focus {
+    background-color: white !important;
+}
+
+.bronze {
+    background: linear-gradient(
+    45deg,
+    #8C6239 5%,
+    #D9A066 10%,
+    #B97A56 30%,
+    #E3B778 50%,
+    #B97A56 70%,
+    #D9A066 80%,
+    #8C6239 95%
+  );
+}
+
+.silver {
+    background: linear-gradient(
+    45deg,
+    #999999 5%,
+    #FFFFFF 10%,
+    #CCCCCC 30%,
+    #DDDDDD 50%,
+    #CCCCCC 70%,
+    #FFFFFF 80%,
+    #999999 95%
+  );
+}
+
+.gold {
+    background: linear-gradient(
+    45deg,
+    #B8860B 5%,
+    #FFD700 10%,
+    #DAA520 30%,
+    #FFDF00 50%,
+    #DAA520 70%,
+    #FFD700 80%,
+    #B8860B 95%
+  );
+}
+
+.platinum {
+    background: linear-gradient(
+        45deg,
+        #E5E4E2 5%,
+        #FFFFFF 10%,
+        #DCDCDC 30%,
+        #F5F5F5 50%,
+        #DCDCDC 70%,
+        #FFFFFF 80%,
+        #E5E4E2 95%
+      );    
 }
 
 /* Color scheme end */
@@ -115,10 +173,6 @@ i {
 #main-logo {
     width: 240px;
     height: 73.5px;
-}
-
-footer {
-    background-color: rgb(96, 100, 104);
 }
 
 /* Navigation End */
@@ -180,24 +234,13 @@ footer {
 }
 
 .appointment-row {
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.offer-row {
-    margin-top: 50px;
-}
-
-.manual-pp {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .training-row {
-    padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -211,37 +254,39 @@ footer {
     display: flex;
     align-items: center; /* Vertically aligns items */
     gap: 10px; /* Adds spacing between the icon and the text */
-  }
+}
+
 .phone-container i {
     color: white;
     font-size: 1.6rem; /* Adjust the icon size if necessary */
-  }
+}
 
 .phone-container p {
     font-size: 36px;
-  }
+}
 
 .icon-container {
     display: flex;
     align-items: center; /* Vertically aligns items */
     gap: 10px; /* Adds spacing between the icon and the text */
-  }
-  .icon-container i {
+}
+
+.icon-container i {
     color: #03045e;
     font-size: 1.6rem; /* Adjust the icon size if necessary */
-  }
+}
 
-  .kk-footer {
+.kk-footer {
     height: 120px;
     padding-top: 20px;
-  }
+}
 
-  .copyright {
+.copyright {
     font-size: 14px;
-  }
+}
 
-  .social-icons i:hover {
+.social-icons i:hover {
     color: #CAF0F8;
-  }
+}
 
 /* Sections end */
