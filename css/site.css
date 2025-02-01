@@ -25,6 +25,16 @@ section {
     font-weight: bold;
 }
 
+.navbar a {
+    color: #3d5a80;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #e5383b;
+}
+
 /* Color scheme */
 
 .navbar {
