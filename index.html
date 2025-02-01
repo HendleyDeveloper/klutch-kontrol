@@ -71,8 +71,8 @@
         <h1 id="welcome" class="outline-text">Welcome to Klutch Kontrol School of Motoring</h1>
         <h4 class="outline-text">Learn to drive safely and efficiently with the guidance of a fully qualified ADI instructor committed to helping you master the road with ease.</h4>
         <span>
-          <button class="kk-button">Enquire Now</button>
-          <button class="kk-button">Book a Lesson</button>
+          <button class="kk-button" onclick="scrollToSection('contactus')">Enquire Now</button>
+          <button class="kk-button" onclick="window.open('https://totaldrive.app/a/enquiry_form.php?16615255591984', '_blank')">Book a Lesson</button>
         </span>
       </section>
     </div>
@@ -327,22 +327,37 @@
   </footer>
   <!-- End footer navbar -->
   <script>
+    // Handle anchor links with href="#"
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
   
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        
+  
         // Calculate the offset from the top of the page (navbar height)
         const navbarHeight = document.querySelector('.navbar').offsetHeight;
-        
+  
         window.scrollTo({
           top: targetElement.offsetTop - navbarHeight,
           behavior: 'smooth'  // Smooth scrolling
         });
       });
     });
+  
+    // Handle buttons with onclick="scrollToSection('#sectionId')"
+    function scrollToSection(id) {
+      const targetElement = document.getElementById(id);
+      if (targetElement) {
+        // Calculate the offset from the top of the page (navbar height)
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  
+        window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: 'smooth'  // Smooth scrolling
+        });
+      }
+    }
   </script>  
 </body>
 </html>
