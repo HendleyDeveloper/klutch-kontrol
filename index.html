@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/site.css">
-    <!-- Custom CSS end -->
-    <!-- Bootstrap intialisation -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Bootstrap initilaisation end -->
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/5457c89002.js" crossorigin="anonymous"></script>
-    <!-- EmailJS initialisation -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-    emailjs.init({
-        publicKey: "nLNQPjE2btCQuB3aX",
-    });
-    })();
-    </script>
-    <!-- Custom JS Script -->
-     <script src="./script/script.js"></script>
-    <title>Klutch Kontrol - A 5* rated driving instructor in South Wales</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/site.css">
+  <!-- Custom CSS end -->
+  <!-- Bootstrap intialisation -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Bootstrap initilaisation end -->
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5457c89002.js" crossorigin="anonymous"></script>
+  <!-- EmailJS initialisation -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+  (function(){
+  emailjs.init({
+      publicKey: "nLNQPjE2btCQuB3aX",
+  });
+  })();
+  </script>
+  <!-- Custom JS Script -->
+  <script src="./script/script.js"></script>
+  <title>Klutch Kontrol - Gain confidence behind the wheel with Klutch Kontrol!</title>
 </head>
 <body>
   <!-- Navigation bar -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
+  <header id="home">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="./img/klutch-kontrol-logo.png" alt="Klutch Kontrol Logo" id="main-logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,19 +40,22 @@
           <div class="container">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto justify-content-end">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contactus">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wheretofindus">Where to Find Us</a>
               </li>
             </ul>
           </div>
@@ -62,29 +65,31 @@
   </header>
   <!-- End navigation bar -->
   <main>
-    <!-- Intro container -->
+  <!-- Intro container -->
     <div class="container text-center d-flex align-items-center justify-content-center car-intro">
       <section>
         <h1 id="welcome" class="outline-text">Welcome to Klutch Kontrol School of Motoring</h1>
-        <h4 class="outline-text">Learn to drive with confidence and ease with Klutch Kontrol, guided by a fully qualified ADI driving instructor dedicated to helping you master the road safely and efficiently.</h4>
+        <h4 class="outline-text">Learn to drive safely and efficiently with the guidance of a fully qualified ADI instructor committed to helping you master the road with ease.</h4>
         <span>
           <button class="kk-button">Enquire Now</button>
           <button class="kk-button">Book a Lesson</button>
         </span>
       </section>
     </div>
-    <!-- End intro container -->
-    <!-- General info container -->
+  <!-- End intro container -->
+  <!-- General info container -->
     <div class="container box-fill">
       <div class="row appointment-row">
         <div class="col-md-4">
           <section>
             <h2 class="fw-bold">Lessons</h2>
             <hr>
-            <p>I offer the platform for you to learn one of the most important skills for life in a safe and pleasant environment. Structured Learning takes place at your own pace based on your needs and on a 1-to-1 basis.
-            <br>
-            <br>
-            Block lesson bookings are available saving you money compared to the price of a single lesson.</p>
+            <p>
+              At Klutch Kontrol, we’re committed to helping you gain the confidence, skills, and knowledge needed to become a safe and responsible driver. Whether you're a beginner getting behind the wheel for the first time or looking to refine your driving skills, our expert instructor provides patient, professional, and tailored lessons to suit your needs.
+              <br>
+              <br>
+              Your journey to driving success starts here—let’s take control of the road together!
+            </p>
             <p>Each lesson is 2 hours</p>
           </section>
         </div>
@@ -112,33 +117,41 @@
               <p>Call now to avoid disappointment!</p>
             </div>
             <div class="phone-container">
-                <i class="fa-solid fa-phone"></i>
-                <p class="phone-number">07588 630266</p>
+              <a href="tel:+447588630266" class="phone-number"><i class="fa-solid fa-phone"></i> 07588 630266</a>
             </div>
           </section>
         </div>
       </div>
     </div>
-    <!-- End general info container -->
-    <!-- About container -->
-    <div class="container d-flex justify-content-center align-items-center my-4">
+  <!-- End general info container -->
+  <!-- About container -->
+    <div class="container d-flex justify-content-center align-items-center my-4" id="about">
       <div class="row">
         <h2 class="header-background  outline-text">About</h2>
         <h3 class="section-format-1 pt-2">Kristian Lloyd</h3>
         <h4 class="section-format-1 pb-2">Owner</h4>
         <div class="container section-format-2">
           <p class="py-4">
-            Hi, I’m Kristian I have lived in the Pontypridd area for around 30 years. I am married with one grown-up son.
+            Hi, I’m Kristian! I’ve lived in the Pontypridd area for nearly 30 years. I’m married and have a grown-up son.
             <br>
             <br>
-            I thoroughly enjoy being an ADI driving instructor and meeting new customers regularly. I am very patient and understanding with my customers. Most of my customers will say I put them at ease as soon as they get into the driving seat. I like to explain everything in detail so we can go as fast or as slow as you like with your learning.
+            As an ADI driving instructor, I genuinely enjoy teaching and meeting new learners. I pride myself on being patient and understanding, ensuring every student feels comfortable from the moment they step into the car. My goal is to create a relaxed learning environment where everything is explained clearly, allowing you to progress at a pace that suits you—whether that’s steady and gradual or fast and focused.
           </p>
         </div>
       </div>
     </div>
   <!-- End about container -->
-    <!-- Services container -->
+  <!-- Review carousel -->
     <div class="container">
+      <div class="row">
+        <h2 class="header-background outline-text mb-4">Reviews</h2>
+      </div>
+      <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+      <div class="commonninja_component pid-603b5872-243d-479a-9dcd-183a293de0e4"></div>
+    </div>
+  <!-- End review carousel -->
+  <!-- Services container -->
+    <div class="container mt-4" id="services">
       <div class="row">
           <h2 class="header-background outline-text">Services</h2>
       </div>
@@ -204,22 +217,47 @@
         </div>
       </div>
     </div>
-    <!-- End services container -->
-    <!-- Review carousel -->
-    <div class="container">
-      <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
-      <div class="commonninja_component pid-603b5872-243d-479a-9dcd-183a293de0e4"></div>
-    </div>
-    <!-- End review carousel -->
-    <!-- Map -->
-    <div class="container my-4 px-0">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.625941384997!2d-3.3965812!3d51.61174210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e170ee9084d31%3A0x6825a44cda76b454!2sKlutchKontrol%20Driving%20School!5e0!3m2!1sen!2suk!4v1737902053969!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <!-- End map -->
-    <!-- Enquiry container -->
-    <div class="container my-4">
+  <!-- End services container -->
+  <!-- Pricing Container -->
+    <div class="container my-4" id="pricing">
       <div class="row">
-        <h2 class="header-background outline-text">Make an Enquiry</h2>
+        <h2 class="header-background outline-text">Pricing</h2>
+        <div class="col-12 col-md-6 col-lg-3 text-center section-format-1 py-5 bronze">
+          <h3 class="pricing-value pb-4 outline-text">£68.00</h3>
+          <h4 class="fw-bold">Single Lesson</h4>
+          <span>2-Hour Lesson</span>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center section-format-2 py-5 silver">
+          <h3 class="pricing-value pb-4 outline-text">£325.00</h3>
+          <h4 class="fw-bold">Silver Package</h4>
+          <h5 class="fw-bold">5 Lessons</h5>
+          <span>
+            £65.00 per lesson, saving you £15.00!
+          </span>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center section-format-1 py-5 gold">
+          <h3 class="pricing-value pb-4 outline-text">£650.00</h3>
+          <h4 class="fw-bold">Gold Package</h4>
+          <h5 class="fw-bold">10 Lessons</h5>
+          <span>
+            £65.00 per lesson, saving you £30.00!
+          </span>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center section-format-2 py-5 platinum">
+          <h3 class="pricing-value pb-4 outline-text">£1,300.00</h3>
+          <h4 class="fw-bold">Platinum Package</h4>
+          <h5 class="fw-bold">20 Lessons</h5>
+          <span>
+            £65.00 per lesson, saving you £60.00!
+          </span>
+        </div>
+      </div>
+    </div>
+  <!-- End pricing container -->
+  <!-- Enquiry container -->
+    <div class="container my-4" id="contactus">
+      <div class="row">
+        <h2 class="header-background outline-text">Contact Us</h2>
         <div class="col-sm-6 section-format-1">
           <form class="py-4">
             <div class="mb-3">
@@ -250,65 +288,61 @@
         </div>
       </div>
     </div>
-    <!-- End enquiry container -->
-    <!-- Pricing Container -->
-    <div class="container my-4">
-      <div class="row">
-        <h2 class="header-background outline-text">Pricing</h2>
-        <div class="col-sm-3 text-center section-format-1 py-5 bronze">
-          <h3 class="pricing-value pb-4 outline-text">£68.00</h3>
-          <h4 class="fw-bold">Single Lesson</h4>
-          <span>2-Hour Lesson</span>
-        </div>
-        <div class="col-sm-3 text-center section-format-2 py-5 silver">
-          <h3 class="pricing-value pb-4 outline-text">£325.00</h3>
-          <h4 class="fw-bold">Block Booking - 5 Lessons</h4>
-          <span>
-            £65.00 per lesson, saving you £15.00!
-          </span>
-        </div>
-        <div class="col-sm-3 text-center section-format-1 py-5 gold">
-          <h3 class="pricing-value pb-4 outline-text">£650.00</h3>
-          <h4 class="fw-bold">Block Booking - 10 Lessons</h4>
-          <span>
-            £65.00 per lesson, saving you £30.00!
-          </span>
-        </div>
-        <div class="col-sm-3 text-center section-format-2 py-5 platinum">
-          <h3 class="pricing-value pb-4 outline-text">£1,300.00</h3>
-          <h4 class="fw-bold">Block Booking - 20 Lessons</h4>
-          <span>
-            £65.00 per lesson, saving you £60.00!
-          </span>
-        </div>
-      </div>
+  <!-- End enquiry container -->
+  <!-- Map -->
+    <div class="container my-4 px-0" id="wheretofindus">
+      <h2 class="header-background outline-text ps-3">Where to find us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.625941384997!2d-3.3965812!3d51.61174210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e170ee9084d31%3A0x6825a44cda76b454!2sKlutchKontrol%20Driving%20School!5e0!3m2!1sen!2suk!4v1737902053969!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- End pricing container -->
+  <!-- End map -->
   </main>
   <!-- Footer navbar -->
   <footer>
     <!-- Outer wrapper to manage full-screen background -->
-    <div style="background-color: white;">
+    <div class="outer-wrapper">
       <!-- Inner container to constrain width -->
-      <div class="container kk-footer">
-        <div class="row align-items-center text-center">
-          <div class="col-sm-4">
-            <p class="mb-0">Copyright <i class="fa-regular fa-copyright copyright"></i> 2025 Klutch Kontrol | Designed by Pug Pixel Studios</p>
+      <div class="container kk-footer py-4">
+        <div class="row align-items-center text-start">
+          <!-- Copyright section -->
+          <div class="col-6">
+            <p class="mb-0">Copyright <i class="fa-regular fa-copyright copyright"></i> 2025 Klutch Kontrol | Designed by <a href="">Pug Pixel Studios</a></p>
           </div>
-          <div class="col-sm-4">
-            <!-- Optional content can go here -->
-          </div>
-          <div class="col-sm-4">
-            <div class="social-icons d-flex justify-content-center gap-3">
-              <a href="https://x.com/klutchkontroll/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=100088949520778" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://www.tiktok.com/@magoowood75" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <!-- Social icons section -->
+          <div class="col-6 text-end">
+            <h4 class="">Social Media Links</h4>
+            <div class="social-icons align-items-center text-end">
+              <a href="https://x.com/klutchkontroll/" target="_blank" class="mb-3"><i class="fa-brands fa-x-twitter px-1"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100088949520778" target="_blank" class="mb-3"><i class="fa-brands fa-facebook px-1"></i></a>
+              <a href="https://www.tiktok.com/@magoowood75" target="_blank"><i class="fa-brands fa-tiktok px-1"></i></a>
             </div>
+          </div>
+          <div class="row text-end">
+            <span class="box-fill">
+              <a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!-- End footer navbar -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        // Calculate the offset from the top of the page (navbar height)
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - navbarHeight,
+          behavior: 'smooth'  // Smooth scrolling
+        });
+      });
+    });
+  </script>  
 </body>
 </html>

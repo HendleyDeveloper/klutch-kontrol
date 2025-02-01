@@ -27,8 +27,12 @@ section {
 
 /* Color scheme */
 
+.navbar {
+    background-color: white;
+}
+
 .box-fill {
-    background-color: #03045e;
+    background-color: #3d5a80;
     color: white;
 }
 
@@ -44,7 +48,7 @@ i {
 }
 
 .kk-footer {
-    background-color: #03045e;
+    background-color: #3d5a80;
 }
 
 .kk-footer i {
@@ -55,8 +59,24 @@ i {
     color: white;
 }
 
+.kk-footer h4 {
+    font-weight: normal;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.kk-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.kk-footer a:hover {
+    color: #e5383b;
+}
+
 .header-background {
-    background-color: #00B4D8;
+    background-color: #3d5a80;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0;
@@ -65,17 +85,17 @@ i {
 }
 
 .section-format-1 {
-    background-color: #90E0EF;
+    background-color: #cccccc;
     margin-bottom: 0;
 }
 
 .section-format-2 {
-    background-color: #CAF0F8;
+    background-color: #f2f2f2;
     margin-bottom: 0;
 }
 
 .form-control {
-    background-color: #CAF0F8 !important;
+    background-color: #f2f2f2 !important;
 }
 
 .form-control:focus {
@@ -93,6 +113,7 @@ i {
     #D9A066 80%,
     #8C6239 95%
   );
+  opacity: 0.8; 
 }
 
 .silver {
@@ -106,6 +127,7 @@ i {
     #FFFFFF 80%,
     #999999 95%
   );
+  opacity: 0.8; 
 }
 
 .gold {
@@ -119,6 +141,7 @@ i {
     #FFD700 80%,
     #B8860B 95%
   );
+  opacity: 0.8; 
 }
 
 .platinum {
@@ -131,7 +154,12 @@ i {
         #DCDCDC 70%,
         #FFFFFF 80%,
         #E5E4E2 95%
-      );    
+      );
+    opacity: 0.8;   
+}
+
+.outer-wrapper {
+    background-color: white;
 }
 
 /* Color scheme end */
@@ -146,8 +174,8 @@ i {
     padding-right: 15px;
     padding-left: 15px;
     background-color: white;
-    border: 2px, #03045e, solid;
-    color: #03045e;
+    border: 2px, #3d5a80, solid;
+    color: #3d5a80;
     font-weight: bold;
 }
 
@@ -155,19 +183,6 @@ i {
     border: 2px, darkred, solid;
     background-color: darkred;
     color: white;
-}
-
-.kk-button-active {
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border: 2px, darkred, solid;
-    background-color: #03045e;
-    color: white;
-    font-weight: bold;
 }
 
 #main-logo {
@@ -192,7 +207,7 @@ i {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: #03045e, 2px, solid;
+    border: #3d5a80, 5px, solid;
 }
 
 .car-intro::before {
@@ -218,10 +233,10 @@ i {
 
 .outline-text {
     color: white;
-    text-shadow: -1px -1px 0 #03045e, 
-                 1px -1px 0 #03045e, 
-                 -1px 1px 0 #03045e, 
-                 1px 1px 0 #03045e;
+    text-shadow: -1px -1px 0 #1b2a41, 
+                 1px -1px 0 #1b2a41, 
+                 -1px 1px 0 #1b2a41, 
+                 1px 1px 0 #1b2a41;
   }
 
 /* intro content end */
@@ -265,6 +280,20 @@ i {
     font-size: 36px;
 }
 
+.phone-number {
+    font-size: 36px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: white;
+}
+
+.phone-number:hover,
+.phone-number:hover i {
+    color: #e5383b;
+}
+
 .icon-container {
     display: flex;
     align-items: center; /* Vertically aligns items */
@@ -272,13 +301,8 @@ i {
 }
 
 .icon-container i {
-    color: #03045e;
+    color: #3d5a80;
     font-size: 1.6rem; /* Adjust the icon size if necessary */
-}
-
-.kk-footer {
-    height: 120px;
-    padding-top: 20px;
 }
 
 .copyright {
@@ -286,7 +310,30 @@ i {
 }
 
 .social-icons i:hover {
-    color: #CAF0F8;
+    color: #e5383b;
 }
 
 /* Sections end */
+
+/* Ensuring the navbar stays fixed at the top */
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Keeps the navbar above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a small shadow effect */
+}
+
+/* Global CSS */
+
+/* Ensure body content doesn't get hidden behind the navbar */
+body {
+    padding-top: 120px; /* Adjust this value based on the height of your navbar */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* End global CCS */
