@@ -123,7 +123,6 @@ i {
     #D9A066 80%,
     #8C6239 95%
   );
-  opacity: 0.8; 
 }
 
 .silver {
@@ -137,7 +136,6 @@ i {
     #FFFFFF 80%,
     #999999 95%
   );
-  opacity: 0.8; 
 }
 
 .gold {
@@ -151,7 +149,6 @@ i {
     #FFD700 80%,
     #B8860B 95%
   );
-  opacity: 0.8; 
 }
 
 .platinum {
@@ -164,8 +161,7 @@ i {
         #DCDCDC 70%,
         #FFFFFF 80%,
         #E5E4E2 95%
-      );
-    opacity: 0.8;   
+      ); 
 }
 
 .outer-wrapper {
