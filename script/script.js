@@ -1,31 +1,44 @@
 // Enquiry form functionality
 
 function sendMail(event) {
-    event.preventDefault(); // Prevent the form from refreshing the page
+  event.preventDefault(); // Prevent the form from refreshing the page
 
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        enquiry: document.getElementById("enquiry").value,
-    };
+  // Get form values
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let enquiry = document.getElementById("enquiry").value;
 
-    emailjs
-        .send("service_7z5gd6h", "template_vk9ve6q", parms)
-        .then(() => {
-            alert("Enquiry Sent.");
-        })
-        .catch((error) => {
-            console.error("Failed to send email:", error);
-            alert("Failed to send Enquiry. Please try again.");
-        });
+  // Check if all fields are filled
+  if (!name || !email || !phone || !enquiry) {
+      alert("Please fill in all the fields.");
+      return; // Stop the function from continuing
+  }
+
+  // Create parameters for email
+  let parms = {
+      name: name,
+      email: email,
+      phone: phone,
+      enquiry: enquiry,
+  };
+
+  // Send email using EmailJS
+  emailjs
+      .send("service_7z5gd6h", "template_vk9ve6q", parms)
+      .then(() => {
+          alert("Enquiry Sent.");
+      })
+      .catch((error) => {
+          console.error("Failed to send email:", error);
+          alert("Failed to send Enquiry. Please try again.");
+      });
 }
 
-// EmailJS
-
+// EmailJS initialization
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("nLNQPjE2btCQuB3aX");
-  });
+  emailjs.init("nLNQPjE2btCQuB3aX");
+});
 
 // Handle anchor links with href="#"
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
