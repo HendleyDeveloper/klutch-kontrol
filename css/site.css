@@ -309,11 +309,26 @@ i {
     display: flex;
     align-items: center; /* Vertically aligns items */
     gap: 10px; /* Adds spacing between the icon and the text */
+    padding-bottom: 10px;
 }
 
+/* Style for the icons inside .icon-container */
 .icon-container i {
-    color: #3d5a80;
-    font-size: 1.6rem; /* Adjust the icon size if necessary */
+    margin-right: 10px; /* Adds space between the icon and text */
+    color: white; /* Icon color */
+    background-color: #3d5a80; /* Background color for the circle */
+    padding: 10px; /* Adds padding to make the circle bigger */
+    border-radius: 50%; /* Makes the icon's background circular */
+    width: 50px; /* Set the width of the circle */
+    height: 50px; /* Set the height of the circle */
+    display: flex; /* Ensures the icon is centered inside the circle */
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
+}
+
+.google-reviews {
+    text-align: center;
+    font-size: 22px;
 }
 
 .copyright {
@@ -322,6 +337,32 @@ i {
 
 .social-icons i:hover {
     color: #e5383b;
+}
+
+/* Remove the default bullet points */
+.kk-icons-list {
+    list-style-type: none; /* Removes default bullets */
+}
+
+/* Add custom styles for list items and icons */
+.kk-icons-list li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+    display: flex;
+    align-items: center; /* Aligns icons and text vertically */
+}
+
+/* Style for the icons */
+.kk-icons-list li i {
+    margin-right: 10px; /* Adds space between the icon and text */
+    color: white; /* Icon color */
+    background-color: #3d5a80; /* Background color for the circle */
+    padding: 10px; /* Adds padding to make the circle bigger */
+    border-radius: 50%; /* Makes the icon's background circular */
+    width: 50px; /* Set the width of the circle */
+    height: 50px; /* Set the height of the circle */
+    display: flex; /* Ensures the icon is centered inside the circle */
+    justify-content: center; /* Centers the icon horizontally */
+    align-items: center; /* Centers the icon vertically */
 }
 
 /* Sections end */
