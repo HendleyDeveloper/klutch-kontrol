@@ -16,13 +16,6 @@
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
-  <script type="text/javascript">
-  (function(){
-  emailjs.init({
-      publicKey: "nLNQPjE2btCQuB3aX",
-  });
-  })();
-  </script>
   <!-- Custom JS Script -->
   <script src="./script/script.js"></script>
   <title>Klutch Kontrol - Gain confidence behind the wheel with Klutch Kontrol!</title>
@@ -318,46 +311,13 @@
           </div>
           <div class="row text-end">
             <span class="box-fill">
-              <a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a>
+              <a href="./privacy.html">Privacy Policy</a> | <a href="./termsandconditions.html">Terms & Conditions</a>
             </span>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <!-- End footer navbar -->
-  <script>
-    // Handle anchor links with href="#"
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-  
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-  
-        // Calculate the offset from the top of the page (navbar height)
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-  
-        window.scrollTo({
-          top: targetElement.offsetTop - navbarHeight,
-          behavior: 'smooth'  // Smooth scrolling
-        });
-      });
-    });
-  
-    // Handle buttons with onclick="scrollToSection('#sectionId')"
-    function scrollToSection(id) {
-      const targetElement = document.getElementById(id);
-      if (targetElement) {
-        // Calculate the offset from the top of the page (navbar height)
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-  
-        window.scrollTo({
-          top: targetElement.offsetTop - navbarHeight,
-          behavior: 'smooth'  // Smooth scrolling
-        });
-      }
-    }
-  </script>  
+  <!-- End footer navbar -->  
 </body>
 </html>

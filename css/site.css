@@ -347,3 +347,16 @@ html {
   }
 
 /* End global CCS */
+
+/* Privacy & T&C's CSS */
+
+.privacy-terms h1, .privacy-terms h2, .privacy-terms h3 {
+    color: #3d5a80;
+    opacity: 0.5;
+}
+
+.privacy-terms a, .privacy-terms li, .privacy-terms p {
+    color: #999999;
+}
+
+/* End Privacy & T&C's CSS */

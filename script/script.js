@@ -20,3 +20,41 @@ function sendMail(event) {
             alert("Failed to send Enquiry. Please try again.");
         });
 }
+
+// EmailJS
+
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("nLNQPjE2btCQuB3aX");
+  });
+
+// Handle anchor links with href="#"
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Calculate the offset from the top of the page (navbar height)
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+      window.scrollTo({
+        top: targetElement.offsetTop - navbarHeight,
+        behavior: 'smooth'  // Smooth scrolling
+      });
+    });
+  });
+
+  // Handle buttons with onclick="scrollToSection('#sectionId')"
+  function scrollToSection(id) {
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      // Calculate the offset from the top of the page (navbar height)
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+      window.scrollTo({
+        top: targetElement.offsetTop - navbarHeight,
+        behavior: 'smooth'  // Smooth scrolling
+      });
+    }
+  }
