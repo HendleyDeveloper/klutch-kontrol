@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/   # Block any sensitive pages (if applicable)
+Allow: /
+
+Sitemap: https://www.klutch-kontrol.co.uk/sitemap.xml
