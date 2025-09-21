@@ -267,34 +267,48 @@
     <div class="container my-4" id="contactus">
       <div class="row">
         <h2 class="header-background outline-text">Contact Us</h2>
-        <div class="col-sm-6 section-format-1">
+
+        <!-- Form -->
+        <div class="col-lg-6 section-format-1">
           <form class="py-4">
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <br>
-                <input type="text" class="form-control" id="name" placeholder="Klutch Kontrol" required>
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Klutch Kontrol" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <br>
-                <input type="email" class="form-control" id="email" placeholder="klutchkontrol.co.uk@gmail.com" required>
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="klutchkontrol.co.uk@gmail.com" required>
             </div>
             <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number</label>
-                <br>
-                <input type="tel" class="form-control" id="phone"  placeholder="07987654321" required>
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="07987654321" required>
             </div>
             <div class="mb-3">
-                <label for="enquiry" class="form-label">Enquiry</label>
-                <br>
-                <textarea class="form-control" id="enquiry" style="resize: none;" required></textarea>
+              <label for="enquiry" class="form-label">Enquiry</label>
+              <textarea class="form-control" id="enquiry" rows="12" style="resize: none;" required></textarea>
             </div>
             <button type="submit" class="kk-button" onclick="sendMail(event)">Submit</button>
           </form>
         </div>
-        <div class="col-sm-6 section-format-2 d-flex align-items-center justify-content-center">
-          <a target="_blank" href="https://threebestrated.co.uk/driving-school-in-rhondda-cynon-taff" style="display:inline-block; border:0;"><img style="width: 100%; display:block;" width="350" src="https://threebestrated.co.uk/awards/driving_school-rhondda_cynon_taff-2025-drk.svg" alt="Best Driving school in Rhondda Cynon Taff" /></a>
+
+        <!-- Right column with two stacked items -->
+        <div class="col-lg-6 section-format-2">
+          <div class="d-flex align-items-center justify-content-center mb-4">
+            <a target="_blank" href="https://threebestrated.co.uk/driving-school-in-rhondda-cynon-taff" style="display:inline-block; border:0;">
+              <img style="width: 100%; display:block;" width="350" src="https://threebestrated.co.uk/awards/driving_school-rhondda_cynon_taff-2025-drk.svg" alt="Best Driving school in Rhondda Cynon Taff" />
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center">
+            <a target="_blank" href="https://referrals.drivingtestsuccess.com/r/Kristian" style="display:inline-block; border:0;">
+              <img style="width: 100%; display:block;" width="350" src="./img/theory-test-qr.png" alt="Download the Driving Theory Test 4 in 1 Kit" />
+            </a>
+          </div>
+          <div class="text-center my-2 section-format-2 fw-bold">
+          <span>Download the Driving Theory Test 4 in 1 Kit! Simply scan, tap or click the QR code.</span>
+          </div>
         </div>
+
       </div>
     </div>
   <!-- End enquiry container -->
